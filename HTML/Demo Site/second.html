@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>My Second Page</title>
+</head>
+<body>
+    <h1>Welcome to Page 2</h2>
+    <a href="./index.html">Back to Main Page</a>
+
+    <!-- New Elements:  LISTS (ordered, unordered)-->
+    <!--                TABLES -->
+    <!--                MEDIA (video, sound, embed)-->
+
+    <!-- Lists:  UNORDERED -->
+    <h2>Centennial Clubs</h2>
+    <ul>
+        <li>Debate Club</li>
+        <li>Art Club</li>
+        <li>Sports Teams
+            <ul>
+                <li>Basketball</li>
+                <li>Track</li>
+                <li>Curling</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Lists: ORDERED -->
+    <h3>Summertime Activities I'm Looking Forward To:</h3>
+    <ol type="i"> <!-- "1" "A" "a" "I" "i" -->
+        <li>Camping/Hiking</li>
+        <li>Sailing</li>
+        <li>Reading</li>
+    </ol>
+
+    <!-- TABLES: -->
+    <h3>Class Enrolment</h3>
+    <table border="5">
+        <tr> <!-- row, but headings-->
+            <th>Class Name</th>
+            <th>Enrolment Amount</th>
+        </tr>
+        <tr>
+            <td>Computer Science</td>
+            <td>180</td>   
+        </tr>
+        <tr>
+            <td>Animation 10</td>
+            <td>60</td>
+        </tr>
+    </table>
+
+    <!-- MEDIA: sound, video, embed -->
+    <audio controls>
+        <source src="https://www.cs20.ca/_static/battleThemeA.mp3" type="audio/mpeg">
+        <source src="/_static/battleThemeA.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Iframe Embed, copy from the SHARE section on
+    Youtube or similar... -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nTMlIvt_CDY?si=sHoAWc_-8nYs3kIS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

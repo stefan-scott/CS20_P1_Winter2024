@@ -1,0 +1,81 @@
+<html>  <!-- HTML start  -->
+    <head>  <!-- #1: stuff not rendered-->
+        <title>Demo Homepage</title>
+        <!-- CSS CODE GOES HERE -->
+        <!-- Select by tag,  ID,  class -->
+        <style>
+            /* Select by tag */
+            body {
+                background-color:rgb(202, 244, 255);
+            } 
+            
+            p {  /* selects ALL <p> tags */
+                font-size: 18pt;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            /* Select by ID */
+            /* Allows to select ONE tag of a type */
+            p#abc123{
+                color:darkred; /*don't forget ; */
+                font-style: italic;
+            }
+
+            /* Select by class */
+            /* Allows to select ONE or MORE, mixed types*/
+            .even{
+                background-color:cadetblue;
+            }
+
+            .odd{
+                background-color:rgb(206, 92, 20);
+            }
+            
+        </style>
+    </head>    
+    <body> <!-- #2: what is shown in browser-->
+            
+            <!-- Linking between our pages (local)-->
+            <a class = "even" href="./second.html">Visit Page 2</a>        
+        
+            <!-- Heading Tags h1 to h6 -->
+            <!-- Headers are BLOCK elements -->
+            <a name = "top"><h1>Heading lvl 1</h1></a>
+            
+            <h2 class = "odd">Heading lvl 2</h2>
+            <h4 class = "even">Heading lvl 4</h4>
+            <h6 class = "odd">Heading lvl 6</h6>
+            <h7 class = "even">Heading lvl 7?</h7>
+
+            <!-- Paragraphs for blocks of text -->
+            <!-- Paragraphs are also BLOCK elements -->
+            <p id="abc123">Here is a block of text.             
+                Please write some random words 
+                to take up some horizontal space 
+                and we can
+                <img width="50px" src="https://media.tenor.com/8WK5oNSUueoAAAAi/cute-stars.gif" >
+                see what happens when our 
+                text hits the end of the website 
+                document.</p>
+            <p> Short Paragraph</p>
+            <p> Here is a third Paragraph.</p>
+
+            <!-- Images. Hotlink (bad), local image(good) -->
+            <!-- Images are INLINE elements -->
+            <img src="https://cs20.ca/_static/skflag.png">
+            <a href = "https://www.google.ca">
+                <img width="200px" src="./assets/cent_chargers.png">
+            </a>
+
+            <h1>Line</h1> <h1>Line</h1> <h1>Line</h1>
+            <h1>Line</h1> <h1>Line</h1> <h1>Line</h1>
+
+            <!-- Links--> 
+            <!-- A tags are INLINE-->
+            <!-- External Link -->
+            <a href="https://www.nba.com"><h1>NBA WEBSITE</h1></a>
+            
+            <!-- Internal Link: within current page -->
+            <a href="#top">Go to Top</a>
+        </body> 
+</html>

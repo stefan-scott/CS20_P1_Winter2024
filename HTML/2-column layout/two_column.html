@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>2 Column Layout</title>
+    <style>
+        .nav{
+            background-color: rgb(188, 142, 231);
+        }
+        .row{
+            background-color: cadetblue;
+        }
+        .column{
+            background-color: gray;
+            height: 250px;
+            float: left;
+        }
+        .left{
+            width:50%;
+        }
+        .right{
+            width:50%;
+            background-color: brown;
+        }
+        .center{
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav"> <!-- Invisible Box-->
+        <p>Navigation Here...</p>
+    </div>
+
+    <!-- 2 Columns Begin Here-->
+    <div class="row">
+        <div class="column left">
+            <h1 class="center">Left Column</h1>
+            <p>Some non-centered text</p>
+        </div>
+        <div class="column right center">
+            <h1>Right Column</h1>
+            <p>Some more text</p>
+        </div>
+    </div>
+</body>
+</html>
