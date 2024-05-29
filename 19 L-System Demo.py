@@ -16,9 +16,14 @@ def apply_rules(ch):
         return "AB"
     else: #if there is no rule to match ch
         return ch
-    
-    
-    
+
+def process_string(original_str):   # "ABBA"
+    # Use accumulator pattern to compute the next generation
+    # one character at a time
+    next_str = ""
+    for c in original_str:
+        next_str = next_str + apply_rules(c)
+    return next_str
     
     
     
