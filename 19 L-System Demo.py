@@ -14,6 +14,7 @@ t.up()            #move to initial position
 t.goto(-350,0)
 t.down()
 
+turtle.tracer(False) #turns OFF animation
 
 # Define L-System Here...
 
@@ -59,6 +60,7 @@ def draw_L_system(instructions, angle, distance):
 #MAIN CODE HERE
 commands = create_L_system(6, "F")
 print(commands)
-draw_L_system(commands, 60, 3)            
-            
+draw_L_system(commands, 60, 3)
+
+turtle.update()    #redraw the screen        
     
