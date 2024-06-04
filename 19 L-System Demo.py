@@ -20,10 +20,10 @@ turtle.tracer(False) #turns OFF animation
 
 def apply_rules(ch):
     #Apply our L-System Rules to a single character
-    if ch == "F":
-        return "F-F++F-F"
-#     elif ch == "B":
-#         return "AB"
+    if ch == "L":
+        return "+RF-LFL-FR+"
+    elif ch == "R":
+        return "-LF+RFR+FL-"
     else: #if there is no rule to match ch
         return ch
 
@@ -58,9 +58,10 @@ def draw_L_system(instructions, angle, distance):
             t.lt(angle)
     
 #MAIN CODE HERE
-commands = create_L_system(6, "F")
+commands = create_L_system(7, "L")
 print(commands)
-draw_L_system(commands, 60, 3)
-
+draw_L_system(commands, 75, 1)
+t.left(180)
+draw_L_system(commands, 75, 1)
 turtle.update()    #redraw the screen        
     
