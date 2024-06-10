@@ -68,34 +68,27 @@ player_y = 2
 plot(player_x, player_y)
 
 while True: # main loop / game loop
+    queue_pixel(player_x, player_y,0)
     x = microbit.accelerometer.get_x() #-1000  1000
     if x < -300: # LEFT
-        unplot(player_x, player_y)
         player_x -= 1
         if player_x < 0:  #constrains to min
             player_x = 0
-        plot(player_x, player_y)
     
     elif x > 300: # RIGHT
-        unplot(player_x, player_y)
         player_x += 1
         if player_x > 4:
             player_x = 4 #constrain to max
-        plot(player_x, player_y)
     
     y = microbit.accelerometer.get_y()
     if y < -300: #forward
-        unplot(player_x, player_y)
         player_y -= 1
         if player_y < 0:
             player_y = 0
-        plot(player_x, player_y)
         
     if y > 300: #backward
-        unplot(player_x, player_y)
         player_y +=1
         if player_y > 4:
             player_y = 4
-        plot(player_x, player_y)
-    
+    plot(player_x, player_y)
     time.sleep(0.01)
